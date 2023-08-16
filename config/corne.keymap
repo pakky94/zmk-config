@@ -14,8 +14,18 @@
 #define L_LOWER 3
 #define L_RAISE 4
 #define L_FUNC 5
+#define L_TOGGLES 6
 
 / {
+        combos {
+                compatible = "zmk,combos";
+                combo_esc {
+                    timeout-ms = <50>;
+                    key-positions = <37 40>;
+                    bindings = <&sl L_TOGGLES>;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -101,5 +111,13 @@
                               &trans   &trans    &trans      &trans   &trans   &trans
                         >;
                 };
-        };
+
+                toggles_layer {
+                        bindings = <
+   &trans  &trans   &trans   &trans   &trans   &trans      &trans       &trans        &trans   &to L_NOMODS &trans   &trans
+   &trans  &trans   &trans   &trans   &trans   &trans      &to L_QWERTY &to L_COLEMAK &trans   &trans       &trans   &trans
+   &trans  &kp CAPS &trans   &trans   &trans   &trans      &trans       &trans        &trans   &trans       &trans   &trans
+                             &trans   &trans   &trans      &trans   &trans    &trans
+                        >;
+                };
 };
