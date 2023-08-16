@@ -65,7 +65,7 @@
 // |     |     |     |     |     |     |   |  /  |  7  |  8  |  9  |  -  |     |
 // |     | ESC | TAB |     |     |     |   |  *  |  4  |  5  |  6  |  +  |     |
 // |     | DEL | RALT| CW  |     |     |   |  .  |  1  |  2  |  3  | RET |     |
-/                    |     |     |     |   |     |     |     |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
    &trans   &trans   &trans   &trans   &trans   &trans        &kp FSLH &kp N7   &kp N8   &kp N9   &kp MINUS &trans
    &trans   &kp ESC  &kp TAB  &trans   &trans   &trans        &kp STAR &kp N4   &kp N5   &kp N6   &kp PLUS  &trans
@@ -79,7 +79,7 @@
 // |     |  _  |  +  |  (  |  )  |     |   |  \  |  &  |  *  |     |  `  |     |
 // |     |  -  |  =  |  {  |  }  |     |   |  |  |  $  |  %  |  ^  |  '  |     |
 // |     |     | RALT|  [  |  ]  |     |   |  ~  |  !  |  @  |  #  |  "  |     |
-/                    |     |     |     |   |     |     |     |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
    &trans  &kp UNDER &kp PLUS  &kp LPAR &kp RPAR &trans        &kp BSLH  &kp AMPS &kp STAR  &trans    &kp GRAVE &trans
    &trans  &kp MINUS &kp EQUAL &kp LBRC &kp RBRC &trans        &kp PIPE  &kp DLLR &kp PRCNT &kp CARET &kp SQT   &trans
