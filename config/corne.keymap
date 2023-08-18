@@ -17,7 +17,7 @@
 #define L_GAMELO 6
 #define L_GAMEHI 7
 #define L_ADJUST 8
-#define L_TOGGLES 9
+#define L_ONESHOT 9
 
 / {
         combos {
@@ -25,7 +25,7 @@
                 combo_esc {
                     timeout-ms = <50>;
                     key-positions = <37 40>;
-                    bindings = <&sl L_TOGGLES>;
+                    bindings = <&sl L_ONESHOT>;
                 };
         };
 
@@ -138,11 +138,11 @@
                         >;
                 };
 
-                toggles_layer {
+                oneshot_layer {
                         bindings = <
    &trans  &trans   &trans   &trans   &trans   &trans      &to L_ADJUST &trans        &to L_GAMELO &to L_NOMODS &trans   &trans
-   &trans  &trans   &trans   &trans   &trans   &trans      &to L_QWERTY &to L_COLEMAK &trans       &trans       &trans   &trans
-   &trans  &kp CAPS &trans   &trans   &trans   &trans      &trans       &trans        &trans       &trans       &trans   &trans
+   &trans  &kp CAPS &trans   &trans   &trans   &trans      &to L_QWERTY &to L_COLEMAK &trans       &trans       &trans   &trans
+   &trans  &trans   &trans   &trans   &trans   &trans      &trans       &trans        &trans       &trans       &trans   &trans
                              &trans   &trans   &trans      &trans   &trans    &trans
                         >;
                 };
