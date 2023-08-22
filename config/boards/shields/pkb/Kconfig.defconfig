@@ -4,22 +4,22 @@
 if SHIELD_PKB_CASE
 
 config ZMK_KEYBOARD_NAME
-	default "pkb Case"
+    default "pkb Case"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
+    default y
 
 config ZMK_USB
-	default y
+    default y
 
 endif
 
 if SHIELD_PKB_LEFT || SHIELD_PKB_RIGHT || SHIELD_PKB_CASE
 
 config ZMK_SPLIT
-	default y
+    default y
 
 config ZMK_BLE
-	default y
+    default y
 
 endif
