@@ -24,9 +24,19 @@
 / {
         combos {
                 compatible = "zmk,combos";
-                combo_esc {
+                combo_oneshot1 {
                     timeout-ms = <50>;
                     key-positions = <37 40>;
+                    bindings = <&sl L_ONESHOT>;
+                };
+                combo_oneshot2 {
+                    timeout-ms = <50>;
+                    key-positions = <36 37 38>;
+                    bindings = <&sl L_ONESHOT>;
+                };
+                combo_oneshot3 {
+                    timeout-ms = <50>;
+                    key-positions = <39 40 41>;
                     bindings = <&sl L_ONESHOT>;
                 };
         };
@@ -142,18 +152,18 @@
 
                 adjust_layer {
                         bindings = <
-   &bootloader &sys_reset   &trans       &trans       &trans        &trans          &trans   &trans     &trans       &trans       &sys_reset &bootloader
-   &trans      &out OUT_BLE &out OUT_USB &trans       &trans        &trans          &trans   &kp K_PREV &kp K_PP     &kp K_NEXT   &trans     &trans
-   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4    &trans   &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &trans     &trans
+   &trans     &trans       &trans       &trans       &trans        &trans          &trans   &trans     &trans       &trans       &trans   &trans
+   &trans     &out OUT_BLE &out OUT_USB &trans       &trans        &trans          &trans   &kp K_PREV &kp K_PP     &kp K_NEXT   &trans   &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4    &trans   &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &trans   &trans
                               &trans   &trans    &trans      &trans   &trans   &trans
                         >;
                 };
 
                 oneshot_layer {
                         bindings = <
-   &trans  &trans   &trans   &trans   &trans   &trans      &to L_ADJUST &trans        &to L_GAMELO &to L_NOMODS &trans       &trans
-   &trans  &kp CAPS &trans   &trans   &trans   &trans      &to L_QWERTY &to L_COLEMAK &trans       &trans       &to L_NUMPAD &trans
-   &trans  &trans   &trans   &trans   &trans   &trans      &trans       &trans        &trans       &trans       &trans       &trans
+   &bootloader &trans   &trans   &trans   &trans   &trans      &to L_ADJUST &trans        &to L_GAMELO &to L_NOMODS &trans       &bootloader
+   &sys_reset  &kp CAPS &trans   &trans   &trans   &trans      &to L_QWERTY &to L_COLEMAK &trans       &trans       &to L_NUMPAD &sys_reset
+   &trans      &trans   &trans   &trans   &trans   &trans      &trans       &trans        &trans       &trans       &trans       &trans
                              &trans   &trans   &trans      &trans   &trans    &trans
                         >;
                 };
