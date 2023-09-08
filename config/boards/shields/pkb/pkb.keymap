@@ -138,17 +138,17 @@
                 gamelo_layer {
                         bindings = <
    &kp TAB   &kp Q   &kp W   &kp E   &kp R   &kp T         &trans  &trans  &trans  &trans  &trans  &trans
-   &kp ESC   &kp A   &kp S   &kp D   &kp F   &kp G         &trans  &trans  &trans  &trans  &trans  &trans
-   &kp LCTRL &kp Z   &kp X   &kp C   &kp V   &kp B         &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans  &mo L_GAMEHI &kp SPACE         &trans  &trans  &trans
+   &kp LSHFT &kp A   &kp S   &kp D   &kp F   &sl L_GAMEHI  &trans  &trans  &trans  &trans  &trans  &trans
+   &kp LALT  &kp Z   &kp X   &kp C   &kp V   &kp B         &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans   &kp LCTRL   &kp SPACE         &trans  &trans  &trans
                         >;
                 };
 
                 gamehi_layer {
                         bindings = <
-   &trans  &kp 1   &kp 2   &kp 3   &kp 4   &kp 5           &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+   &kp ESC   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &trans  &trans  &trans  &trans  &trans  &trans
+   &trans    &trans  &kp N   &kp Y   &kp H   &kp G           &trans  &trans  &trans  &trans  &trans  &trans
+   &trans    &trans  &trans  &trans  &kp N7  &kp N6          &trans  &trans  &trans  &trans  &trans  &trans
                            &trans  &trans  &trans          &trans  &trans  &trans
                         >;
                 };
