@@ -63,10 +63,10 @@
 // | CTRL |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB  &kp Q      &kp W      &kp F       &kp P       &kp B   &kp J &kp L        &kp U       &kp Y      &kp SEMI   &kp BSPC
-   &kp ESC  &hm LGUI A &hm LALT R &hm LSHFT S &hm LCTRL T &kp G   &kp M &hm LCTRL N  &hm LSHFT E &hm LALT I &hm LGUI O &kp SQT
-   &kp LCTRL &kp Z     &kp X      &kp C       &kp D       &kp V   &kp K &kp H        &kp COMMA   &kp DOT    &kp FSLH   &kp ESC
-                  &kp LGUI &lt L_LOWER BSPC &lt L_FUNC SPACE    &lt L_FUNC SPACE &lt L_RAISE RET &kp RALT
+   &kp TAB   &kp Q      &kp W      &kp F       &kp P       &kp B   &kp J &kp L        &kp U       &kp Y      &kp SEMI   &kp BSPC
+   &kp LCTRL &hm LGUI A &hm LALT R &hm LSHFT S &hm LCTRL T &kp G   &kp M &hm LCTRL N  &hm LSHFT E &hm LALT I &hm LGUI O &kp ENT
+   &kp LSHFT &kp Z      &kp X      &kp C       &kp D       &kp V   &kp K &kp H        &kp COMMA   &kp DOT    &kp FSLH   &kp LSHFT
+                  &kp LALT &lt L_LOWER BSPC &lt L_FUNC SPACE    &lt L_FUNC SPACE &lt L_RAISE RET &kp ESC
                         >;
                 };
 
@@ -86,10 +86,10 @@
 
                 qwerty_layer {
                         bindings = <
-   &kp TAB   &kp Q      &kp W      &kp E       &kp R       &kp T   &kp Y &kp U        &kp I       &kp O      &kp P         &kp BSPC
-   &kp ESC   &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G   &kp H &hm LCTRL J  &hm LSHFT K &hm LALT L &hm LGUI SEMI &kp SQT
-   &kp LCTRL &kp Z      &kp X      &kp C       &kp V       &kp B   &kp N &kp M        &kp COMMA   &kp DOT    &kp FSLH      &kp ESC
-                  &kp LGUI &lt L_LOWER BSPC &lt L_FUNC SPACE    &lt L_FUNC SPACE &lt L_RAISE RET &kp RALT
+   &trans    &kp Q      &kp W      &kp E       &kp R       &kp T   &kp Y &kp U        &kp I       &kp O      &kp P         &trans
+   &trans    &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G   &kp H &hm LCTRL J  &hm LSHFT K &hm LALT L &hm LGUI SEMI &trans
+   &trans    &kp Z      &kp X      &kp C       &kp V       &kp B   &kp N &kp M        &kp COMMA   &kp DOT    &kp FSLH      &trans
+                            &trans   &trans   &trans        &trans   &kp N0   &trans
                         >;
                 };
 
