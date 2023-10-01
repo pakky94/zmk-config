@@ -1,10 +1,10 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_PKB_CASE
+if SHIELD_PKB_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "pkb Case"
+    default "pkb"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
@@ -14,7 +14,7 @@ config ZMK_USB
 
 endif
 
-if SHIELD_PKB_LEFT || SHIELD_PKB_RIGHT || SHIELD_PKB_CASE
+if SHIELD_PKB_LEFT || SHIELD_PKB_RIGHT
 
 config ZMK_SPLIT
     default y

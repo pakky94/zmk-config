@@ -17,5 +17,3 @@ include:
     shield: pkb_left
   - board: nice_nano_v2
     shield: pkb_right
-  - board: seeeduino_xiao_ble
-    shield: pkb_case
