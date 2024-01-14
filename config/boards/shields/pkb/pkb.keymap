@@ -51,6 +51,15 @@
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                 };
+                ls: layer_plus_sticky {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "LAYER_PLUS_STICKY";
+                        #binding-cells = <2>;
+                        tapping-term-ms = <150>;
+                        quick-tap-ms = <0>;
+                        flavor = "tap-preferred";
+                        bindings = <&mo>, <&sk>;
+                };
         };
 
         keymap {
@@ -66,7 +75,7 @@
    &kp TAB   &kp Q      &kp W      &kp F       &kp P       &kp B   &kp J &kp L        &kp U       &kp Y      &kp SEMI   &kp BSPC
    &kp LCTRL &hm LGUI A &hm LALT R &hm LSHFT S &hm LCTRL T &kp G   &kp M &hm LCTRL N  &hm LSHFT E &hm LALT I &hm LGUI O &kp RET
    &kp LSHFT &kp Z      &kp X      &kp C       &kp D       &kp V   &kp K &kp H        &kp COMMA   &kp DOT    &kp FSLH   &kp LSHFT
-                  &kp LALT &lt L_LOWER BSPC &lt L_FUNC &sk LSHIFT  &lt L_FUNC SPACE &lt L_RAISE RET &kp ESC
+                  &kp LALT &lt L_LOWER BSPC &ls L_FUNC LSHIFT      &lt L_FUNC SPACE &lt L_RAISE RET &kp ESC
                         >;
                 };
 
