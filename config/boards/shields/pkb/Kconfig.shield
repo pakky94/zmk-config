@@ -1,7 +1,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_PKB_CENTAL
+config SHIELD_PKB_CENTRAL
     def_bool $(shields_list_contains,pkb_dongle)
 
 config SHIELD_PKB_LEFT
