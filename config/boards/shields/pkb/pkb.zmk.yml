@@ -4,7 +4,6 @@ name: The pkb
 type: shield
 url: https://github.com/pakky94/zmk-config
 requires: [pro_micro]
-exposes: [i2c_oled]
 features:
   - keys
 siblings:
