@@ -195,7 +195,7 @@
                         bindings = <
    &bootloader &trans   &trans   &trans   &kp PSCRN &trans      &to L_ADJUST &trans        &to L_GAMELO &to L_NOMODS &trans       &bootloader
    &sys_reset  &kp CAPS &trans   &trans   &trans    &trans      &to L_QWERTY &to L_COLEMAK &trans       &trans       &to L_NUMPAD &sys_reset
-   &trans      &kp KP_NUM &trans  &trans  FPp&trans    &trans      &trans       &trans        &trans       &trans       &trans       &trans
+   &trans      &kp KP_NUM &trans  &trans  &trans    &trans      &trans       &trans        &trans       &trans       &trans       &trans
                              &trans   &trans   &trans      &trans   &trans    &trans
                         >;
                 };
